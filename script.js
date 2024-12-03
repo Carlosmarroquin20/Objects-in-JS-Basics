@@ -4,22 +4,26 @@ const person1 = {
     lastName: "Marroquin",
     age: 21,
     isEmployed: true,
-    
-}
+    sayHello: function(){
+        console.log("Hola soy Ema!")
+    },
+    eat: function(){
+        console.log("I'm eating a lot of pizzas")
+    },
+};
 
 const person2 = {
     firstName: 'Diego',
     lastName: "Carra",
     age: 33,
     isEmployed: false,
+    sayHello: function(){
+        console.log("Hey, Im Diego!")
+    },
+    eat: function(){
+        console.log("I'm eating a lot of HotDogs")
+    },
 }
 
-console.log(person1.firstName)
-console.log(person1.lastName)
-console.log(person1.age)
-console.log(person1.isEmployed)
-
-console.log(person2.firstName)
-console.log(person2.lastName)
-console.log(person2.age)
-console.log(person2.isEmployed)
+person1.eat();
+person2.eat();
